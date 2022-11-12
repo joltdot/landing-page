@@ -121,7 +121,7 @@ a {
 
 .image-container img {
     width: auto;
-    height:40vh;
+    height:auto;
     border-radius: 10px;
     overflow: hidden;
     align-self: center;
@@ -178,13 +178,14 @@ a {
 
     .hero {
         justify-content: center;
-        padding: 50px 0px 50px 0px;
+        padding: 5px 0px 50px 0px;
+
     }
 
     .hero-title {
         align-self: center;
         text-align: center;
-
+        font-size: 36px;
     }
     
     .hero-text {
@@ -199,4 +200,10 @@ a {
         justify-content: center;
     }
 
-}
+    ul {
+    gap: 10px;
+
+    text-align: right;
+    }
+    
+ 
