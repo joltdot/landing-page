@@ -121,7 +121,7 @@ a {
 
 .image-container img {
     width: auto;
-    height:auto;
+    height:40vh;
     border-radius: 10px;
     overflow: hidden;
     align-self: center;
@@ -200,10 +200,17 @@ a {
         justify-content: center;
     }
 
+    .image-container img {
+        width: auto;
+        height: auto;
+    }
+
     ul {
     gap: 10px;
 
     text-align: right;
     }
+
+}
     
  
