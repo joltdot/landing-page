@@ -60,7 +60,6 @@ a {
 
 .below-header {
     display: flex;
-
     flex: 1;
 }
 
@@ -73,8 +72,8 @@ a {
     color: #E5E7EB;
     padding: 50px 50px 50px 0px;
     gap: 15px;
-
 }
+
 .hero-title {
     font-size: 48px;
     font-weight: 800;
@@ -137,7 +136,7 @@ a {
     justify-content: center;
     padding: 50px;
     flex-direction: column;
-
+    background-color: #f9faf8;
 }
 
 .info-title {
@@ -193,15 +192,94 @@ a {
 
 .quote-container {
     display: flex;
+    height:100vh;
+    background-image: url("cat-quote.jpg");
+    background-position: center;
+    background-attachment:fixed;
+    background-size: cover;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+
+
+
+.quote {
+    font-size: 72px;
+    color: #f9faf8;
+    text-shadow: 3px 3px 3px #1F2937;
+    text-align: center;
+}
+
+.author {
+    color: #E5E7EB;
+    font-size: 24px;
+    text-shadow: 3px 3px 3px #1F2937;
 }
 
 .bottom-container {
     display: flex;
+    background-color: #f9faf8;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #3882F6;
+    color: #f9faf8;
+    padding: 5vh;
+    height: 10vh;
+    margin: 5vh;
+    border-radius: 20px;
+    gap: 2.5vh;
+
+}
+
+.text-one {
+    font-size: 24px;
+}
+
+.text-two {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.donate-btn {
+    padding: 2.5vh;
+    border: #E5E7EB solid 2.5px;
+    border-radius: 20px;
+    color: #f9faf8;
+    background-color: #3882F6;
+    font-family: 'DM Sans';
+    font-weight: bolder;
+    font-size: 24px;
+    transition: 0.2s;
+}
+
+.donate-btn:hover {
+    background-color: #30b14a;
+    cursor: pointer;
 }
 
 .footer {
     display: flex;
+    background-color: #1F2937;
+    justify-content: center;
+    padding: 5vh;
+}
+
+.footer-text {
+    color: #E5E7EB;
+
+}
+
+.footer-text a {
+    border-bottom: 1px solid #f9faf8;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -272,17 +350,33 @@ a {
 
     }
 
+    .rectangle {
+        flex-direction: column;
+        height: 20vh;
+        transition: 0.2s;
+        text-align: center;
+    }
+
+    .text-one {
+        margin-bottom: 1.5vh;
+        font-size: 18px;
+    }
+    .text-two {
+        font-size: 14px;
+    }
+
+    .donate-btn {
+        padding: 1.5vh;
+    }
 
     }
 
 
-@media only screen and (max-width: 100px) {
+@media only screen and (max-width: 600px) {
 
 
 
     
-
-
 
     ul {
     gap: 10px;
