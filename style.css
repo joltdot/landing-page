@@ -22,7 +22,7 @@ a:hover {
 a {
     text-decoration: none;
     color: #eee;
-
+    transition: 0.3s;
 }
 
 .top-container {
@@ -172,6 +172,13 @@ a {
     border: solid #1F2937 5px;
     border-radius: 15%;
     overflow: hidden;
+    transition: 0.5s;
+
+}
+
+.sqr:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 0px #1F2937;
 }
 
 
@@ -185,15 +192,15 @@ a {
 
 
 .sqr-text {
-    padding: 8px;
+    padding: 2vh;
     text-align: center;
 }
 
 
 .quote-container {
     display: flex;
-    height:100vh;
-    background-image: url("cat-quote.jpg");
+    height:120vh;
+    background-image: url("/images/cat-quote.jpg");
     background-position: center;
     background-attachment:fixed;
     background-size: cover;
@@ -211,7 +218,10 @@ a {
     color: #f9faf8;
     text-shadow: 3px 3px 3px #1F2937;
     text-align: center;
+    
 }
+
+
 
 .author {
     color: #E5E7EB;
@@ -246,7 +256,7 @@ a {
 
 .text-two {
     font-size: 16px;
-    font-weight: lighter;
+    font-weight:100;
 }
 
 .donate-btn {
@@ -258,7 +268,7 @@ a {
     font-family: 'DM Sans';
     font-weight: bolder;
     font-size: 24px;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 .donate-btn:hover {
