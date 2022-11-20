@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
 body {
@@ -16,22 +15,24 @@ ul {
     gap: 15px;
 }
 
+a:hover {
+    text-shadow: 0px 0px 20px #f9faf8;
+}
+
 a {
     text-decoration: none;
     color: #eee;
 
 }
 
-
 .top-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: #1F2937;
-    padding: 25px 200px 50px 200px;
-    cursor: default
 
-  
+    padding: 25px 200px 50px 200px;
+    cursor: default;
 }
 
 
@@ -39,6 +40,7 @@ a {
 .header {
     display: flex;
     align-items: center;
+    padding-bottom: 15px;
 }
 
 .logo-text {
@@ -50,6 +52,8 @@ a {
 
 .heart {
     padding: 0px 5px 0px 5px;
+
+    color:rgb(241, 52, 52)
 }
 
 
@@ -120,7 +124,7 @@ a {
 }
 
 .image-container img {
-    width: auto;
+    width: 50vh;
     height:40vh;
     border-radius: 10px;
     overflow: hidden;
@@ -130,10 +134,66 @@ a {
 
 .info-container {
     display: flex;
+    justify-content: center;
+    padding: 50px;
+    flex-direction: column;
+
 }
+
+.info-title {
+    font-size: 48px;
+    text-align: center;
+    font-weight: 900;
+    align-self: center;
+}
+
+.info-subtitle {
+    font-size: 24px;
+    text-align: center;
+}
+
+.info-bottom {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+}
+
+.section {
+    width: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sqr {
+    width: 30vh;
+    height: 30vh;
+    margin-top: 3vh;
+    border: solid #1F2937 5px;
+    border-radius: 15%;
+    overflow: hidden;
+}
+
+
+.sqr img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+
+}
+
+
+
+.sqr-text {
+    padding: 8px;
+    text-align: center;
+}
+
 
 .quote-container {
     display: flex;
+
 }
 
 .bottom-container {
@@ -170,7 +230,7 @@ a {
 
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 950px) {
     .below-header {
         flex-direction: column;
         padding-bottom: 25px;
@@ -205,12 +265,32 @@ a {
         height: auto;
     }
 
+    
     ul {
     gap: 10px;
+    text-align: right;
 
+    }
+
+
+    }
+
+
+@media only screen and (max-width: 100px) {
+
+
+
+    
+
+
+
+    ul {
+    gap: 10px;
     text-align: right;
     }
 
+    .info-title {
+        font-size: 16px;
+    }
+
 }
-    
- 
