@@ -6,7 +6,8 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
-    
+    cursor: default;
+    background-color: #1F2937;
 }
 
 ul {
@@ -100,7 +101,7 @@ a {
     font-family: 'DM Sans';
     font-weight: bolder;
     font-size: large;
-    transition: box-shadow 0.5s ease;
+    transition: box-shadow 0.1s;
 
 }
 
@@ -114,7 +115,7 @@ a {
 .sign-up-hero:active {
     background-color: #30b14a;
     box-shadow: 0 0 20px 0px #30b14a;
-    transition: box-shadow 0.1 ease-in-out;
+
 }
 
 .image-container {
@@ -123,7 +124,7 @@ a {
 }
 
 .image-container img {
-    width: 50vh;
+
     height:40vh;
     border-radius: 10px;
     overflow: hidden;
@@ -208,6 +209,7 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    cursor: default;
 }
 
 
@@ -261,7 +263,7 @@ a {
 
 .donate-btn {
     padding: 2.5vh;
-    border: #E5E7EB solid 2.5px;
+    border: #f9faf8 solid 2.5px;
     border-radius: 20px;
     color: #f9faf8;
     background-color: #3882F6;
@@ -274,6 +276,13 @@ a {
 .donate-btn:hover {
     background-color: #30b14a;
     cursor: pointer;
+    box-shadow: 0 0 10px 0px #f9faf8;
+}
+
+.donate-btn:active {
+    background-color: #f9faf8;
+    color: #3882F6;
+    box-shadow: 0 0 0px 0px #f9faf8;
 }
 
 .footer {
