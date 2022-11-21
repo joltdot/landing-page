@@ -200,7 +200,7 @@ a {
 .quote-container {
     display: flex;
     height:120vh;
-    background-image: url("/images/cat-quote.jpg");
+    background-image: url("images/cat-quote.jpg");
     background-position: center;
     background-attachment:fixed;
     background-size: cover;
